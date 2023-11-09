@@ -5,7 +5,6 @@ import styles from './layout.module.css';
 import Dashtop from '@/Component/Layouts/dashboardheader/dashboardheader';
 import Mainbar from '@/Component/DashboardComp/Overview/overview';
 import Sidebar from '@/Component/Layouts/sidebar/sidebar';
-import Settingsidebar from './settingSidebar/settingsidebar';
 import Footer from '../Footer/footer'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi';
 import { LiaYoutubeSquare } from 'react-icons/lia';
@@ -36,11 +35,13 @@ const Layout = ({ children }) => {
           className={`${styles.subcontone} ${isMenuOpen ? styles.menuOpen : ''}`}
         >
 
-          {
-           router.pathname.includes ("/dashboard") ?  <Sidebar /> : <Settingsidebar  />
-          }
-
          
+{
+  router.pathname.includes("/dashboard") && <Sidebar />
+}
+         
+          
+
         </div>
         <hr className={styles.line} />
 
@@ -50,7 +51,7 @@ const Layout = ({ children }) => {
           {children}
         </div>
       </div>
-      
+
       <hr />
       <Footer />
     </div>

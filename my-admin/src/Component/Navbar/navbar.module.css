@@ -1,0 +1,575 @@
+.main{
+    /* padding:15px 20px; */
+    /* border-bottom: 1px solid gray; */
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    /* color: white; */
+    /* background-color: white; */
+}
+.textcont{
+    flex: 1;
+    padding:15px 20px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.lastcont{
+    flex:1;
+    padding:5px 20px 10px 20px;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.bold{
+    font-weight: bolder;
+    font-size: 0.9rem;
+    line-height: 1rem;
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.listcont{
+    display: none;
+}
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* background-color: red; */
+    
+}
+
+.mobilelist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    background-color: white;
+    border-radius: 5px;
+    color: #800000;
+    font-weight: 500;
+    /* background-color: red; */
+    padding: 5px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+}
+.item{
+    padding: 8px 20px;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: black;
+    /* font-weight: 600; */
+/* background-color: red; */
+}
+.items{
+    padding: 0px 20px 12px 20px;
+}
+
+
+.icon{
+    width:18px;
+    height: 18px;
+    /* color: gray; */
+}
+.sublast{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+.subdiv{
+    display: flex;
+}
+.menuicon{
+    width: 35px;
+    height: 35px;
+    display: block;
+    color: #000080;
+}
+.link{
+    text-decoration: none;
+    list-style: none;
+    /* color: black; */
+}
+.item:hover{
+   color: #800000;
+   /* background-color: rgb(237, 237, 243); */
+   padding: 15px 20px;
+    
+}
+.callcont{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.buttoncont{
+    /* background-color: yellow; */
+
+    /* margin-top: -10px; */
+}
+.button{
+/* border: 1px solid #800000; */
+background-color: #800000;
+color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    width: 35%;
+    padding: 7px 10px;
+}
+.buttontwo{
+    /* border: 1px solid #800000; */
+    background-color: #000080;
+    color: white;
+        padding: 5px 10px;
+        border-radius: 20px;
+        width: 35%;
+        padding: 7px 10px;
+    }
+.imgcont{
+    /* flex: 1; */
+    width: 50%;
+    height: 10vh;
+    /* background-color: red; */
+    
+    
+}
+.img{
+    width:100%;
+    height: 100%;
+}
+.menucont{
+    /* flex: 1; */
+}
+.lastcontainer{
+    display: none;
+}
+
+
+
+
+@media (min-width:768px) {
+    .textcont{
+        padding:25px 35px;
+    }
+    .bold{
+        font-size: 1.7rem;
+        line-height: 1.5rem;
+    }
+    
+    .menuicon{
+        width: 40px;
+        height: 40px;
+    }
+    .lastcont{
+        gap: 0px;
+        padding:0px 35px 20px 35px;
+    }
+  
+    .icon{
+        width: 35px;
+        height: 35px;
+    }
+    .sublast{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        flex: 1;
+    }
+    .mobilelist{
+        font-size: 1.2rem;
+        line-height: 1rem;
+        /* background-color: gray; */
+        gap: 13px;
+      
+    }
+    .item{
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        line-height: 1rem;
+    }
+    .items{
+        padding: 0px 20px 15px 20px;
+    }
+    .buttontwo{
+        border-radius: 20px;
+        width: 20%;
+        padding: 15px 10px;
+    }
+    .button{
+        border-radius: 20px;
+        width: 20%;
+        padding: 15px 10px;
+    }
+
+    .item:hover{
+        color: #800000;
+        padding: 10px 30px;
+         
+     }
+     .buttoncont{
+        padding: 0;
+        /* margin-top: -20px; */
+     }
+     .imgcont{
+        /* flex: 1; */
+        width: 40%;
+        height: 10vh;
+    }
+
+    .menuicon{
+        width: 55px;
+        height: 55px;
+        display: block;
+        /* color: gray; */
+    }
+    
+  
+}
+
+
+@media (min-width:1024px) {
+    .main{
+        padding:20px 100px;
+        width: 100%;
+        
+    }
+  
+    
+    .bold{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .textcont{
+        flex: 1;
+        /* background-color: yellow; */
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        position: relative;
+        padding: 0;
+    }
+    .textcont{
+    flex: 1;
+    padding:1px 20px;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.mobilelist{
+    
+    padding: 20px 0;
+    position: absolute;
+    width: 30%;
+    z-index: 2;
+    /* color: black; */
+    border-radius: 5px;
+    filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+}
+.mobilelistcont{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+}
+    .icon{
+        width: 25px;
+        height: 25px;
+    }
+    .inputcont{
+       font-size: 0.8rem;
+       line-height: 1rem;
+       padding: 0px;
+    }
+    .icon{
+        width: 20px;
+        height: 20px;
+    }
+  
+   
+    .sublast{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex: 1;
+    }
+    .list{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* gap: 30px; */
+        /* background-color: red; */
+        /* padding: 0 40px; */
+    }
+    .listcont{
+        flex: 2;
+        display: none;
+        }
+    .lastcont{
+        flex:2;
+        padding:0px;
+        /* background-color: red; */
+    }
+
+.mobilelistcont{
+    /* background-color: yellow; */
+}
+    .searchcont{
+        /* background-color: green; */
+        border: none;
+    }
+    .item{
+        padding:5px 20px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    
+    .items{
+        padding: 30px 20px 5px 20px;
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+   .item:hover{
+    padding: 5px 20px;
+   }
+    .inputcont{
+        width: 100%;
+    }
+    .button{
+       border: none;
+        width: 40%;
+        padding: 8px 20px;
+        /* margin-top: 10px; */
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        /* padding: 10px 0; */
+
+    }
+    .buttontwo{
+        border: none;
+         width: 40%;
+         padding: 8px 20px;
+         /* margin-top: 10px; */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         /* padding: 10px 0; */
+ 
+     }
+    .buttoncont{
+        margin-top: -30px;
+    }
+    .imgcont{
+        /* flex: 1; */
+        width: 25%;
+        height: 15vh; 
+    }
+    .menuicon{
+        width: 45px;
+        height: 45px;
+        display: block;
+        /* color: gray; */
+    }
+
+}
+
+@media (min-width:1280px) {
+    /* .main{
+        padding:20px 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       gap: 20px
+    } */
+    .bold{
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    .inputcont{
+        font-size: 0.9rem;
+        line-height: 1rem;
+     }
+     .icon{
+        width: 25px;
+        height: 25px;
+    }
+    .list{
+        font-size: 1.0rem;
+        line-height: 1rem;
+        gap: 50px;
+    }
+    .listcont{
+    flex: 2;
+    display: none;
+    }
+    .lastcont{
+        flex:1.5;
+        
+    }
+    .item{
+        font-size: 1rem;
+        line-height: 1rem;
+        padding: 10px 20px;
+        
+    }
+    .item:hover{
+        padding: 20px;
+    }
+    .mobilelist{
+        padding: 20px 0;
+        position: absolute;
+        width: 25%;
+        z-index: 2;
+        /* color: black; */
+        border-radius: 5px;
+        filter: drop-shadow(0px 9px 4px rgba(0, 0, 0, 0.25));
+    }
+    .buttoncont{
+        /* margin-top: -30px; */
+        /* background-color: blue; */
+       
+    }
+    .imgcont{
+        /* flex: 1; */
+        width: 20%;
+        height: 12vh;
+        
+    }
+    .menuicon{
+        width: 55px;
+        height: 55px;
+        display: block;
+        /* color: gray; */
+    }
+    .button{
+        border: none;
+         width: 50%;
+         padding: 15px 20px;
+         /* margin-top: 10px; */
+         display: flex;
+         justify-content:center;
+         align-items: center;
+         padding: 10px 0;
+ 
+     }
+     .buttontwo{
+         border: none;
+          width: 50%;
+          padding: 15px 20px;
+          /* margin-top: 10px; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 10px 0;
+  
+      }
+     
+     
+}
+@media (min-width:1440px) {
+    .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .listcont{
+        /* display: block; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        /* background-color: green; */
+        
+        
+    }
+    .lastcontainer{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.9rem;
+        line-height: 1rem;
+        
+    }
+    .menuicon{
+        display: none;
+    }
+    .list {
+        font-size: 1.0rem;
+        line-height: 1rem;
+        gap: 0px;
+        /* background-color: rgb(0, 255, 72); */
+        /* display: flex; */
+    }
+    .imgcont{
+        /* flex: 1; */
+        width: 50%;
+        height: 12vh;
+    }
+    .button{
+        background-color: #800000;
+        color: white;
+        width: 100%;
+        padding: 10px 40px;
+        /* font-size: 0.8rem; */
+       
+    }
+    .item{
+        font-size: 0.9rem;
+        line-height: 1rem;
+        /* background-color: yellow; */
+       
+    }
+  
+    /* .buttontwo{
+        background-color: #000080;
+        color: white;
+        width: 100%;
+        padding: 10px 40px;
+        font-size: 0.9rem;
+       
+    } */
+    .buttoncont{
+        margin-top: 0;
+    }
+    .lastcont{
+        display: block;
+    }
+  .signupbutt{
+background-color: #800000;
+padding:8px 20px;
+border-radius: 20px;
+color: white;
+  }
+  .signinbutt{
+    background-color: #000080;
+    padding:8px 20px;
+    border-radius: 20px;
+    color: white;
+      }
+}

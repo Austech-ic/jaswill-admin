@@ -10,6 +10,7 @@ import { IoIosNotifications } from 'react-icons/io'
 import { MdOutlineKeyboardArrowDown, MdWeb } from 'react-icons/md'
 import styles from './dashboardheader.module.css'
 import { AiFillWeiboCircle, AiOutlineUser } from 'react-icons/ai'
+import {TbWorld} from 'react-icons/tb'
 
 const DashboardHeader = () => {
   const userName = 'John Doe'
@@ -26,7 +27,7 @@ const DashboardHeader = () => {
      <div className={styles.conthree}>
       <Link href={`/`}>
       <div className={styles.divone}>
-        <AiFillWeiboCircle  className={styles.icon}/>
+        <TbWorld  className={styles.icon}/>
         <p>View Website</p>
         </div>
       </Link>
