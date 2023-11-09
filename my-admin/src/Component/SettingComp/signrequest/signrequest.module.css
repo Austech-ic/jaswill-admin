@@ -1,0 +1,156 @@
+.maincont{
+    padding: 50px 10px;
+}
+.sign{
+    padding: 10px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.subcont{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: rgb(79,93,112);
+}
+.cont{
+    padding: 20px;
+}
+.contwo, .textcont{
+    padding: 20px;
+}
+.schcont{
+    padding:10px 20px;
+}
+.schconts{
+    padding:10px 20px;
+}
+.buttoncont{
+    padding: 30px 20px 60px 20px;
+    background-color: rgb(251, 251, 252);
+}
+.contnew{
+display: flex;
+align-items: center;
+gap: 8px;
+/* border: 1px solid red; */
+}
+.text{
+    font-size: 12px;
+    line-height: 1rem;
+}
+/* .inp{
+    display: flex;
+    align-items: center;
+} */
+.contwo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.rem{
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+    color: black;
+}
+.divcont{
+    border: 1px solid gray;
+    /* padding: 10px; */
+    border-radius: 5px;
+    width: 100%;
+}
+.divcont:hover{
+   border: 2px solid blue;
+}
+.divconts{
+    border: 1px solid gray;
+    /* padding: 10px; */
+    margin-top: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+.select,.selects{
+    width: 100%;
+   border: none;
+   outline: none;
+}
+
+.thendiv{
+    padding: 10px 0;
+}
+.contone{
+    padding: 10px 0;
+}
+.contones{
+    padding: 5px 0;
+}
+.label{
+    font-size: 0.9rem;
+    line-height: 2.0rem;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+.radiocont{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    }
+    .textarea{
+        border: 1px solid gray;
+        border-radius: 5px;
+        outline: none;
+        padding: 5px;
+        background-color: rgb(242, 244, 246);
+    }
+
+
+
+
+@media (min-width:768px) {
+    .maincont{
+        padding: 50px 20px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 1.5rem;
+    }
+    .rem{
+        font-size: 1.3rem;
+        line-height: 2.0rem;
+    }
+    .divcont{
+        width: 50%;
+        padding: 10px;
+    }
+    .divconts{
+        width: 30%;
+    }
+
+    
+}
+@media (min-width:1024px) {
+    .text{
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+    .rem{
+        font-size: 1.2rem;
+        line-height: 2.0rem;
+    }
+    .divconts{
+        border: 1px solid gray;
+        /* padding: 10px; */
+        border-radius: 5px;
+        width: 20%;
+    }
+    .cont{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    
+}

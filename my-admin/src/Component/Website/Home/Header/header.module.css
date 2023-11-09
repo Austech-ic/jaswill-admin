@@ -1,0 +1,337 @@
+.maincont {
+    background-image: url('../../../../../public/img/sea.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* min-height: 50vh; */
+    /* background-position: center; */
+  }
+
+  .subheader{
+    padding: 40px 10px;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .textone{
+    font-size: 30px;
+    /* text-align: center; */
+    line-height: 39px;
+  }
+  .textwo{
+    font-size: 15px;
+    padding: 10px 0;
+    /* text-align: center; */
+
+  }
+  .subheadone{
+    /* flex: 3; */
+    /* background-color: aquamarine; */
+    }
+ .subheadtwo{
+  /* flex: 1; */
+  /* color: black; */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  }
+  .buttonone{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    width: 50%;
+    border-radius: 3px;
+    font-size: 14px;
+    border: none;
+  }
+  .buttontwo{
+    background-color: rgb(104, 149, 241);
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+  }
+  .buttonthree{
+    background-color: transparent;
+    /* color: black; */
+    margin-top: 3px;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    font-size: 14px;
+    
+  }
+  .loglink{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+  }
+  .loglinks{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+  }
+  .buttonthree:hover{
+    border: 1px solid white;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(104, 149, 241); */
+    color: black;
+    border-radius: 3px;
+    width: 50%;
+    
+  }
+  .whitmaincont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  .whitecont{
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+   top: 405px;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  }
+  .small{
+    font-size: 10px;
+    padding: 10px 0;
+  }
+  .drag{
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .icon{
+    width: 30px;
+    height: 30px;
+  }
+  .Link{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+  @media (min-width:768px) {
+    .maincont {
+        /* background-image: url('/sea.jpeg'); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: center; */
+      }
+    
+      .subheader{
+        padding: 90px 10px 120px 10px;
+        color:white;
+        display: flex;
+        flex-direction: column;
+        /* background-color: aquamarine; */
+      }
+      .textone{
+        font-size: 40px;
+        line-height: 56px;
+      }
+      .textwo{
+        font-size: 24px;
+      }
+      .subheadone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background-color: brown; */
+        padding: 0 30px;
+        /* align-items: center; */
+       
+        }
+     .subheadtwo{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      .whitecont{
+        background-color: white;
+        width: 80%;
+        border-radius: 5px;
+        padding:40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       top: 500px;
+      }
+      .small{
+        font-size: 16px;
+        padding: 13px 0;
+      }
+      .drag{
+        font-weight: bold;
+        font-size: 24px;
+        padding: 10px 0;
+      }
+      .icon{
+        width: 50px;
+        height: 50px;
+      }
+      .buttontwo{
+        font-size: 18px;
+        padding: 10px;
+      }
+      .buttonone{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        width: 50%;
+        font-size: 18px;
+      }
+      .buttonthree{
+        font-size: 18px;
+      }
+      .buttonthree:hover{
+        width: 50%;
+      }
+     
+  }
+
+  @media (min-width:1024px) {
+    .subheader{
+        padding: 100px 10px;
+        color:white;
+        display: flex;
+        flex-direction: row;
+      }
+      .textwo{
+        font-size: 24px;
+      }
+    .textone{
+        font-size: 40px;
+      }
+      .buttonone{
+        border-radius: 10px;
+        font-size: 16px;
+      }
+      .small{
+        font-size: 12px;
+        padding: 10px 0;
+      }
+      .drag{
+        font-weight: bold;
+        font-size: 26px;
+      }
+      .subheadone{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        /* padding: 0 90px; */
+        /* align-items: center; */
+        flex: 3;
+        }
+     .subheadtwo{
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      }
+      .whitecont{
+        background-color: white;
+        width: 80%;
+        border-radius: 5px;
+        padding:40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        top: 390px;
+      }
+      .buttontwo{
+        font-size: 14px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      .buttonone{
+        padding: 10px;
+        background-color: white;
+        color: black;
+        margin-top: 10px;
+        width: 90%;
+        border-radius: 3px;
+      }
+      .buttonthree{
+        background-color: transparent;
+        color: black;
+        margin-top: 3px;
+        color: white;
+        border: none;
+        padding: 10px 0;
+        font-size: 16px;
+        width: 90%;
+      }
+      .buttonthree:hover{
+       
+        border-radius: 3px;
+        width: 90%;
+        
+      }
+      .small{
+        font-size: 12px;
+        padding: 13px 0;
+      }
+     
+      
+  }
+
+  @media (min-width:1280px) {
+    .buttontwo{
+      font-size: 18px;
+    }
+    .small{
+      font-size: 14px;
+      padding: 13px 0;
+    }
+    .whitecont{
+      background-color: white;
+      width: 80%;
+      border-radius: 5px;
+      padding:170px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      bottom: -190px;
+    }
+    .textone{
+      font-size: 50px;
+      line-height: 64px;
+    }
+    .subheadone{
+      
+      padding: 0 110px;
+      /* align-items: center; */
+      flex: 3;
+      }
+      .textwo{
+        font-size: 28px;
+      }
+    
+  }

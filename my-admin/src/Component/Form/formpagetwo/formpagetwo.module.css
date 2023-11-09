@@ -1,0 +1,134 @@
+.main {
+    background-color: rgb(218, 185, 234);
+    padding: 50px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+.head {
+    font-size: 1.0rem;
+    line-height: 2rem;
+}
+
+.text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.subcont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.containerone {
+    width: 100%;
+}
+
+.image {
+    object-fit: contain;
+    width: 80% !important;
+    position: relative !important;
+    height: 80% !important;
+    background-color: transparent;
+    /* border: 1px solid green; */
+}
+
+
+@media (min-width:768px) {
+    .main {
+        padding: 100px;
+        /* gap: 50px; */
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: start;
+    }
+
+    .head {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .text {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    .subcont {
+        display: flex;
+        /* border: 1px solid red; */
+        flex-direction: column;
+        gap: 30px;
+        flex: 1;
+    }
+
+    .containerone {
+        display: flex;
+        justify-content: center;
+         flex: 1;
+         /* background-color: green; */
+ 
+     }
+     .image {
+         object-fit: contain;
+         width: 100% !important;
+         position: relative !important;
+         height: 100% !important;
+         background-color: transparent;
+         /* border: 1px solid green; */
+     }
+}
+
+@media (min-width:1024px) {
+    .subcont {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+     .containerone {
+        display: flex;
+        justify-content: center;
+         flex: 1;
+         /* background-color: green; */
+ 
+     }
+       .text {
+        font-size: 1.0rem;
+        line-height: 1.7rem;
+    }
+     .image {
+         object-fit: contain;
+         width: 90% !important;
+         position: relative !important;
+         height: 90% !important;
+         background-color: transparent;
+         /* border: 1px solid green; */
+     }
+}
+
+@media (min-width:1280px) {
+    .containerone {
+       display: flex;
+       justify-content: center;
+        flex: 1;
+        /* background-color: green; */
+
+    }
+    .text {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .image {
+        object-fit: contain;
+        width: 70% !important;
+        position: relative !important;
+        height: 70% !important;
+        background-color: transparent;
+        /* border: 1px solid green; */
+    }
+}

@@ -1,0 +1,129 @@
+.line{
+    border-bottom: 0.5px solid gray;
+}
+.maincont{
+    padding: 50px 0;
+   
+}
+.bill{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.subcont{
+    display: grid;
+    grid-template-columns: 4fr;
+    grid-template-rows: 4fr;
+    gap: 40px;
+    padding: 40px 10px;
+    color:  rgb(79,93,112);
+    /* background-color: red; */
+}
+.map{
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    /* background-color: rgb(0, 13, 255); */
+}
+.submap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head{
+    color: rgb(0, 119, 255);
+}
+.cont{
+    border: 1px dashed gray;
+    border-radius: 5px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    gap: 20px;
+}
+.seconnd{
+    border:1px dashed gray;
+    border-radius: 5px;
+}
+.second{
+    
+    border: 1px dashed gray;
+    border-radius: 5px;
+    margin-top: 30px;
+    /* background-color: red; */
+    padding: 10px 0;
+    color:  rgb(79,93,112);
+}
+.date{
+    padding: 10px;
+    color: rgb(79,93,112);
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: bold;
+    /* background-color: red; */
+}
+
+.newconts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 10px;
+    
+}
+
+ .mainsec{
+    padding: 0 10px;
+}
+.button{
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+.button:hover{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+@media (min-width:768px) {
+    
+.maincont{
+    padding: 50px 20px;
+   
+}
+.bill{
+    padding: 10px;
+}
+.subcont{
+    display: grid;
+    grid-template-columns:4fr;
+    grid-template-rows: 4fr;
+}
+
+}
+
+
+@media (min-width:1024px) {
+    .maincont{
+        padding: 50px 20px;
+       
+    }
+    .bill{
+        padding: 10px;
+    }
+    .subcont{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+    }
+    
+    } 

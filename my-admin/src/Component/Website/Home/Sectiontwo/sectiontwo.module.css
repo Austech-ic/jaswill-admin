@@ -1,0 +1,225 @@
+.mainconts{
+  background-color: #77C3FD;
+    padding:200px 50px 20px 20px;
+    
+  }
+  .subcont{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    gap: 20px;
+  }
+  .images{
+    object-fit: contain;
+    width: 50%;
+    position: absolute;
+    top: -54px;
+    /* top: 100px; */
+    left: 50px;
+
+  }
+  .image{
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: 100% !important;
+    /* border: 1px solid green; */
+
+  }
+  .contones{
+    /* background-color: blue; */
+  }
+  .conttwos{
+    /* background-color: red; */
+    position: relative;
+   
+  }
+  .stream{
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+  }
+  .button{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #77C3FD;
+    font-size: 14px;
+    gap: 10px;
+
+  }
+  .link{
+    text-decoration: none;
+  }
+  .button:hover{
+    background-color: white;
+    border-radius: 3px;
+    color: #77C3FD;
+    padding: 10px;
+  }
+  .sign{
+    font-size: 20px;
+    color: #77C3FD;
+    padding: 10px 0;
+  }
+  .request{
+    font-size: 14px;
+    color: white;
+    padding: 5px 0;
+  }
+  .icon{
+    width: 12px;
+    height: 12px;
+  }
+
+
+  @media (min-width:768px) {
+    .mainconts {
+        /* background-color: #77C3FD; */
+        padding:250px 80px 50px 80px;
+      }
+      .subcont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 0;
+        /* background-color: green; */
+      }
+      .images{
+        object-fit: contain;
+        width: 70%;
+        position: absolute;
+        top: -20px;
+        left: 50px;
+    
+      }
+      .contones{
+        /* background-color: blue; */
+        flex: 1;
+      }
+      .conttwos{
+        flex: 1;
+      }
+      .sign{
+        font-size: 24px;
+        color: white;
+        padding: 10px 0;
+      }
+      .stream{
+        color: white;
+        padding: 30px 0;
+        font-size: 32px;
+        text-align: center;
+      }
+      .sign{
+        font-size: 32px;
+        color: white;
+        padding: 10px 0;
+      }
+      .request{
+        font-size: 24px;
+        color: white;
+        padding: 10px 0;
+      }
+      .button{
+       
+        font-size: 22px;
+      }
+      .icon{
+        width: 20px;
+        height: 20px;
+      }
+    
+    
+  }
+  @media (min-width:1024px) {
+    .mainconts {
+      /* background-color: #77C3FD; */
+      padding:250px 100px 30px 100px;
+    }
+    
+    .subcont{
+      padding: 20px 0 10px 0;
+    }
+      .sign{
+        font-size: 24px;
+        color: white;
+        padding: 10px 0;
+      }
+      .stream{
+        color: white;
+        padding: 20px 0;
+        font-size: 30px;
+        text-align: center;
+      }
+      .sign{
+        font-size: 30px;
+        color: white;
+        padding: 10px 0;
+      }
+      .request{
+        font-size: 20px;
+        color: white;
+        padding: 10px 0;
+        
+      }
+      .button{
+        font-size: 18px;
+      }
+      .icon{
+        width: 15px;
+        height: 15px;
+      }
+      .images{
+        width: 50%;
+        top: 2px;
+        left: 86px;
+      }
+      
+    
+    
+  }
+
+
+  @media (min-width:1280px) {
+    .mainconts {
+      /* background-color: #77C3FD; */
+      padding:250px 130px 30px 130px;
+    }
+    .subcont{
+      padding: 40px 0 10px 0;
+    }
+ 
+    .stream{
+      color: white;
+      padding: 50px 0 10px 0;
+      font-size: 32px;
+      text-align: center;
+    }
+    .sign{
+      font-size: 32px;
+      color: white;
+      padding: 10px 0;
+    }
+    .request{
+      font-size: 24px;
+      color: white;
+      padding: 10px 0;
+     
+    }
+    .button{
+      font-size: 22px;
+    }
+    .icon{
+      width: 20px;
+      height: 20px;
+    }
+    .images{
+      top: 70px;
+    }
+  
+}

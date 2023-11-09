@@ -1,0 +1,114 @@
+.container{
+    padding: 30px 10px;
+    /* background-color: yellow; */
+}
+.main{
+    padding: 10px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign{
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+
+.subcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: green; */
+    gap: 40px;
+}
+.head{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: rgb(206, 76, 76);
+    text-align: center;
+}
+.divcont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.text{
+    color: blue;
+    font-weight: bolder;
+}
+.word{
+    /* color: gray; */
+    font-size: 1.0rem;
+    line-height: 2rem;
+    
+}
+
+
+@media (min-width:768px) {
+    .main{
+        padding: 5px 100px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .head{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: rgb(206, 76, 76);;
+    }
+    .sign{
+        padding: 20px 100px;
+    }
+    
+    
+    .subcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* background-color: green; */
+        gap: 40px;
+    }
+}
+
+@media (min-width:1024px) {
+    .main{
+        padding: 30px 50px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign{
+        padding: 5px 50px;
+    }
+    
+    
+    .subcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* background-color: green; */
+        gap: 40px;
+    }
+}
+
+@media (min-width:1280px) {
+    .main{
+        padding:5px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign{
+        padding:10px 100px;
+    }
+    
+    
+    .subcont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* background-color: green; */
+        gap: 40px;
+    }
+}

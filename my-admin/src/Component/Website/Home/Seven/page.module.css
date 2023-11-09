@@ -1,0 +1,108 @@
+.maincont{
+    background-image: linear-gradient(to bottom, rgb(187, 187, 243), #6D7CFD);
+
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buttoncont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 3px;
+    gap: 5px;
+    font-size: 14px;
+    width: 200px;
+    border: none;
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}
+.textone{
+    font-size: 26px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    line-height:31px;
+    padding: 5px;
+}
+.textwo{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+}
+
+
+@media (min-width:768px) {
+    .buttoncont{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        border-radius: 3px;
+        gap: 5px;
+        font-size: 18px;
+        width: 210px;
+    } 
+    .textwo{
+        font-size: 24px;
+        font-weight: 500;
+        color: white;
+        width: 70%;
+        text-align: center;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+@media (min-width:1024px) {
+  .button{
+    font-size: 14px;
+  } 
+  .textwo{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    width: 80%;
+    text-align: center;
+}  
+  
+}
+
+
+@media (min-width:1280px) {
+    .button{
+        gap: 5px;
+        font-size: 16px;
+    }
+    .icon{
+        height: 20px;
+        width: 20px;
+    }
+}
+

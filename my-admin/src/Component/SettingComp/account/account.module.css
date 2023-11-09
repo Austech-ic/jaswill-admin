@@ -1,0 +1,287 @@
+.maincont{
+    padding: 50px 10px;
+   
+}
+
+
+.subcont{
+    border: none;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 30px;
+    /* background-color: red; */
+    padding: 10px 0;
+}
+.date{
+    padding: 10px;
+    color: rgb(79,93,112);
+    /* background-color: red; */
+}
+.newconts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+    color: rgb(79,93,112);
+    font-size: 12px;
+}
+.organiz{
+    padding: 10px 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.line{
+    border-bottom: 0.5px solid gray;
+}
+.iconcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.contone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.conttwo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.iconone{
+    width: 15px;
+    height: 15px;
+}
+.button{
+    padding:5px 10px;
+    border: none;
+    background-color: rgb(0, 75, 128);
+    border-radius: 5px;
+    color: white;
+}
+.buttontwo{
+    background-color: transparent;
+    border: none;
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding:5px 10px;
+    color: rgb(79,93,112);
+}
+.buttonthree{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(203, 227, 242);
+    color: rgb(0, 123, 255);
+    width: 80%;
+}
+.buttonthree:hover{
+    background-color:  rgb(0, 123, 255);
+    color: white;
+}
+.intcont{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+   
+}
+.drivecont{
+    padding: 10px 30px;
+    color: rgb(0, 123, 255);
+    font-size: 12px;
+}
+.input{
+    padding:5px 10px;
+    outline: none;
+}
+.inputcont{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.thirdcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: rgb(0, 123, 255);
+}
+.subconts{
+  
+    border: 1px solid rgb(0, 123, 255);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 30px;
+    background-color: rgb(217, 230, 238);
+    padding: 10px 0;
+    
+}
+.subthird{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+   
+}
+.icons{
+    width: 20px;
+    height: 20px;
+    color: rgb(0, 123, 255);
+}
+.text{
+    font-size: 12px;
+    color: rgb(0, 123, 255);
+}
+.link{
+    text-decoration: none;
+}
+.phone{
+    padding:5px 10px;
+}
+.danger{
+    padding:5px 0;
+    color: red;
+}
+.textnew{
+    padding: 10px;
+    font-size: 12px;
+    color: rgb(79,93,112);
+}
+.contbutton{
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.phonebutt{
+    padding:5px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: transparent;
+    font-size: 12px;
+    color: rgb(79,93,112);
+}
+.lastcont{
+    padding: 20px 0;
+    margin-top: 30px;
+}
+.last{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: rgb(79,93,112);
+}
+.accountcont{
+    font-size: 12px;
+    color: rgb(79,93,112);
+}
+.buttonlast{
+background-color: red;
+border: none;
+border-radius: 5px;
+color: white;
+padding: 10px;
+}
+
+
+@media (min-width:768px) {
+    .maincont{
+    padding: 50px 20px;   
+}
+.contbutton{
+    padding: 5px 20px;
+}
+.phone{
+    padding: 10px 20px;
+}
+.danger{
+    padding: 10px 0;
+    color: red;
+}
+.phonebutt{
+    padding:10px;
+    font-size: 14px;
+}
+
+.textnew{
+    padding: 20px;
+    font-size: 14px;
+}
+.drivecont{
+    font-size: 14px;
+}
+.newconts{
+    font-size: 14px;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.icons{
+    width: 30px;
+    height: 30px;
+}
+.buttonthree{
+    width: 60%;
+}
+.last{
+    padding: 20px;
+}
+.accountcont{
+    font-size: 14px;
+}
+
+
+
+
+}
+
+
+@media (min-width:1024px) {
+    .iconcont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .intcont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 0;
+       
+    }
+    .buttonthree{
+        width: 35%;
+    }
+    .last{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media (min-width:1280px) {
+    .buttonthree{
+        width: 28%;
+    }
+}

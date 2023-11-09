@@ -1,0 +1,131 @@
+
+
+.main{
+    position: relative;
+}
+.poptext{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    top: 59px;
+    left: 15px;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+   
+}
+.text{
+    display: block;
+}
+.show{
+    display: none;
+}
+.read{
+    text-decoration: underline;
+    color: blue;
+    font-size: 14px;
+}
+.ellipsis {
+    display: inline-block;
+    width: 1em; /* Adjust this value to control the number of dots */
+    /* overflow: hidden; */
+    white-space: nowrap;
+}
+.popcont{
+    /* width: 100%; */
+    padding: 5px 5px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 12px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+@media (min-width:768px) {
+    .main{
+        position: relative;
+    }
+    .poptext{
+        /* position: fixed;
+        top: 75px;
+        left: 28px; */
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .popcont{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .main{
+        position: relative;
+    }
+    .poptext{
+        position: fixed;
+        /* top: 75px;
+        left: 169px; */
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .popcont{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 10px;
+    }
+}
+
+@media (min-width:1280px) {
+    .main{
+        position: relative;
+    }
+    .poptext{
+        position: fixed;
+
+        /* top: 75px;
+        left: 179px; */
+         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .popcont{
+        width: 100%;
+        padding: 10px 20px;
+        border: 1px solid black;
+        border-radius: 4px;
+        background-color: white;
+        font-size: 12px;
+    }
+}
+
