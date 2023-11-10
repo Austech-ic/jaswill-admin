@@ -9,8 +9,16 @@ import {TbSquareCheckFilled} from 'react-icons/tb'
 const Sent = () => {
 
   return (
-   <div>
-    <p>Blog</p>
+   <div className={styles.main}>
+    <div className={styles.home}>
+        <HiHome />
+        <p>Dashboard / Blog</p>
+      </div>
+      <div>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
    </div>
   )
 }

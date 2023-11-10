@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
 
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
+    
   };
 
   return (

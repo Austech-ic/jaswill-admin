@@ -1,238 +1,63 @@
-.maincont{
-    /* border: 1px solid red; */
-    color: rgb(79,93,112);
-    min-height: 100vh;
-   padding: 40px;
- }
- .homemain{
-     display: flex;
-    flex-direction: column;
-   align-items: center;
- }
- .homecont{
-     height: 80px;
-     width: 80px;
-     border-radius: 100%;
-     background-color: gray;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background-color: #B3AAFC;
- }
- .icon{
-     width: 40px;
-     height: 40px;
-     color: white;
- }
- .icons{
-   width: 20px;
-   height: 20px;
- }
- .textone{
-  padding: 10px 0;
-  text-align: center;
-  font-size: 16px;
-  line-height: 25px;
- }
- .textwo{
-     text-align: center;
-      font-weight: 600;
-      font-size: 30px;
-      line-height: 40px;
-    }
-    .textcont{
-     padding: 12px 0;
-    }
-    .maindivcont{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .divcont{
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      /* background-color: aqua; */
-      padding: 10px 0;
-    }
-    .subcont{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 10px;
-    }
-    .text{
-      padding: 5px 30px;
-      font-size: 14px;
-    }
-  .head{
-    font-weight: 400;
-      font-size: 20px;
+.main{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #F2F4FE;
+}
+.home{
+  background-color: white;
+ display: flex;
+      justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+   border-radius: 5px;
+    font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+@media (min-width:768px) {
+  .main{
+  padding: 30px 50px;
+}
+  .home{
+  width: 100%;
+  padding: 10px;
+  gap: 10px;
+   font-size: 1.1rem;
+  line-height: 1rem;
+  padding: 20px;
+  
+}
+}
+
+
+
+@media (min-width:1024px) {
+  .main{
+    padding: 30px 30px;
   }
-  /* .map{
-    flex: 4;
-  } */
-  .mapcont{
-    /* background-color: red; */
-    display: flex;
-      flex-direction: column;
-      gap: 20px;
+  .home{
+    width: 50%;
+     font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 10px;
+     justify-content: flex-start;
   }
-   
-   
-   
- 
- 
- @media (min-width:768px) {
-     .maincont{
-         /* border: 1px solid red; */
-         /* min-height: 70vh; */
-         padding: 40px;
-      }
-      .homecont{
-          height: 80px;
-          width: 80px;
-          border-radius: 100%;
-      }
-      .icon{
-         width: 50px;
-         height: 50px;
-      }
-      .icons{
-       width: 30px;
-       height: 30px;
-     }
-      .textone{
-        padding: 20px 0;
-         font-size: 18px;
-         line-height: 25px;
-        
-        }
-        .textwo{
-            text-align: center;
-             font-weight: 600;
-             font-size: 40px;
-             line-height: 40px;
-           }
-           .textcont{
-             padding: 20px 0;
-            }
-            .divcont{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 10px;
-              padding: 20px 0;
-            }
-            .text{
-              padding: 10px 40px;
-              font-size: 18px;
-            }
-            .head{
-              font-weight: 600;
-                font-size: 24px;
-            }
-            .icons{
-              width: 30px;
-              height: 30px;
-            }
-       
-         
-         
-       
- }
- 
- @media (min-width:1024px) {
-     .maincont{
-         /* border: 1px solid red; */
-         min-height: 100vh;
-         padding: 40px;
-      }
-      .homecont{
-          height: 80px;
-          width: 80px;
-          border-radius: 100%;
-      }
+}
+
+
+@media (min-width:1280px) {
+  .main{
+    padding: 30px 70px;
+  }
+  .home{
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 20px;
     
-      .icons{
-       width: 20px;
-       height: 20px;
-     }
-      .textone{
-        padding: 15px 0;
-         font-size: 18px;
-         line-height: 28px;
-        }
-        .textwo{
-            text-align: center;
-             font-weight: 600;
-             font-size: 40px;
-             line-height: 50px;
-             /* color: black; */
-           }
-           .text{
-            padding: 10px 40px;
-            font-size: 16px;
-          }
-          .divcont{
-            padding: 20px 0;
-            gap: 40px;
-          }
-          .maindivcont{
-            padding: 10px 0;
-           
-            gap: 10px;
-          }
-          .head{
-            font-weight: 600;
-              font-size: 16px;
-          }
-          .icons{
-            width: 30px;
-            height: 30px;
-          }
-          .mapcont{
-            display: grid;
-            grid-template-rows: 2fr 2fr;
-            grid-template-columns: 2fr 2fr;
-              flex-direction: row;
-              
-          }
-         
-           
-         
-       
- }
- 
- @media (min-width:1280px) {
-   
-      .textone{
-         padding: 15px 0;
-         font-size:22px;
-         line-height: 30px;
-        }
-        .textwo{
-            
-             font-size: 45px;
-             line-height: 50px;
-           }
-           .maindivcont{
-            padding: 40px 0;
-            gap: 10px;
-          }
-          .text{
-            font-size: 18px;
-            padding: 10px 35px;
-          }
-          .head{
-            font-weight: 600;
-              font-size: 20px;
-          }
-          .icons{
-            width: 25px;
-            height: 25px;
-          }
-         
-         
-         
- }
+  }
+}
