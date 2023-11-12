@@ -8,7 +8,12 @@ import Link from 'next/link';
 import styles from './sidebar.module.css'
 
 
-const Sidebar = () => {
+const Sidebar = ({ closeMenu }) => {
+
+  const handleMenuItemClick = () => {
+    // Close the menu when any menu item is clicked
+    closeMenu();
+  }
   const details = [
     {
       id:1,
@@ -84,7 +89,7 @@ const Sidebar = () => {
       {
         details.map((datum) => (
           <div key={datum.id} className={styles.cont} >
-            <Link href={datum.path} className={styles.link}>
+            <Link href={datum.path} onClick={handleMenuItemClick} className={styles.link}>
                 <p>{datum.icon}</p>
                 <p>{datum.title}</p>
              

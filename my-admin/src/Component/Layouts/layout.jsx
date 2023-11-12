@@ -12,11 +12,17 @@ import { LiaYoutubeSquare } from 'react-icons/lia';
 const Layout = ({ children }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
+  
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   const toggleMenu = () => {
     setIsMenuOpen((prevIsMenuOpen) => !prevIsMenuOpen);
-    
   };
+
+  
+  
 
   return (
     <div className={`${styles.maincont} ${isMenuOpen ? styles.menuOpen : ''}`}>
@@ -38,7 +44,7 @@ const Layout = ({ children }) => {
 
          
 {
-  router.pathname.includes("/dashboard") && <Sidebar />
+  router.pathname.includes("/dashboard") && <Sidebar closeMenu={closeMenu}  />
 }
          
           
