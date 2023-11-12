@@ -1,18 +1,22 @@
 import React from 'react'
 import styles from './testimonial.module.css'
-import {BiMessageSquareCheck,BiShareAlt} from 'react-icons/bi'
 import { HiHome,HiOutlineDocumentText,HiOutlineTemplate } from 'react-icons/hi'
-import {AiOutlineImport} from 'react-icons/ai'
-import { MdCreate, MdOutlineCreateNewFolder,MdIncompleteCircle } from 'react-icons/md'
-import {TbSquareCheckFilled} from 'react-icons/tb'
 
-const page = () => {
+const Testimonial = () => {
  
   return (
-    <div>
-      <p>Testimonial</p>
-    </div>
+    <div className={styles.main}>
+    <div className={styles.home}>
+        <HiHome />
+        <p>Dashboard / Testimonial</p>
+      </div>
+      <div>
+        <button></button>
+        <button></button>
+        <button></button>
+      </div>
+   </div>
   )
 }
 
-export default page
+export default Testimonial

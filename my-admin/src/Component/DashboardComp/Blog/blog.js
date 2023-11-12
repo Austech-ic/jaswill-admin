@@ -6,7 +6,7 @@ import {AiOutlineHome,AiOutlineInbox,AiFillFileAdd,AiFillSetting,AiOutlineClockC
 import { MdCreate, MdOutlineCreateNewFolder,MdIncompleteCircle } from 'react-icons/md'
 import {TbSquareCheckFilled} from 'react-icons/tb'
 
-const Sent = () => {
+const Blog = () => {
 
   return (
    <div className={styles.main}>
@@ -23,4 +23,4 @@ const Sent = () => {
   )
 }
 
-export default Sent
+export default Blog

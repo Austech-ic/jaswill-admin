@@ -1,5 +1,5 @@
 .main{
-    padding: 30px;
+    padding: 30px 30px 50px 30px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -74,7 +74,7 @@
 
 @media (min-width:768px) {
     .main{
-    padding: 30px 50px;
+    padding: 30px 50px 70px 50px;
 }
     .home{
     width: 100%;
@@ -106,7 +106,7 @@
 
 @media (min-width:1024px) {
   .main{
-    padding: 30px 70px;
+    padding: 30px 70px 80px 70px;
 }
 .home{
     width: 25%;
@@ -150,7 +150,7 @@
 
 @media (min-width:1280px) {
   .main{
-    padding: 30px 70px;
+    padding: 30px 70px 80px 70px;
 }
 .home{
     width: 25%;
