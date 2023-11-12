@@ -9,7 +9,7 @@
 }
 
 .subcont{
-   /* border-bottom: 1px solid gray; */
+   /* border-bottom: 1px solid red; */
     display: flex;
     flex-direction: row;
     margin-top: 40px;
@@ -32,14 +32,14 @@ background-color: #0B113C;
   padding: 10px 0;
 
 }
-
+.menuOpen.maincont{
+  height: 70vh;
+}
 .menuOpen.subcont {
-  /* background-color: aqua; */
-  /* max-height: 80vh;  */
+  max-height: 80vh; 
 }
 .menuOpen .subcontone {
   width: 100%;
-  /* height: 20vh; */
   display: block;
  /* background-color: yellow; */
 }
@@ -102,9 +102,12 @@ background-color: #0B113C;
   .subcont{
     margin-top: 50px;
   }
-  /* .menuOpen.subcont {
-    max-height: 70vh; 
-  } */
+  .menuOpen.maincont{
+    height: 50vh;
+  }
+  .menuOpen.subcont {
+    max-height: 50vh; 
+  }
 
   
 }
@@ -122,6 +125,15 @@ background-color: #0B113C;
   /* background-color: red; */
   }
   
+  .menuOpen.maincont{
+    height: 0;
+  }
+  .menuOpen.subcont {
+    max-height: 100vh; 
+  }
+  
+  
+  
   .menu{
     display: none;
 }
@@ -136,10 +148,7 @@ background-color: #0B113C;
     min-height: 100vh;
    
   }
-  .menuOpen.subcont {
-    /* background-color: aqua; */
-    /* max-height: 100vh;  */
-  }
+
 }
 
 
