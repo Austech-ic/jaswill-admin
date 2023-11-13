@@ -14,59 +14,40 @@ const Modal = ({ handleClose, show, children }) => {
   const [errorMessage, setErrorMessage] = useState('');
 
   const [formData, setFormData] = useState({
-    id: 1, // Initial ID
     title: '',
     description: '',
     image: null,
   });
 
-  
-
   const handleFileUpload = (event) => {
     const file = event.target.files[0];
-  
-    if (file instanceof Blob) {
-      setSelectedMedia(file);
-  
-      const reader = new FileReader();
-      reader.onload = () => {
-        setFormData((prevFormData) => ({
-          ...prevFormData,
-          image: reader.result,
-        }));
-      };
-      reader.readAsDataURL(file);
-    }
+    setSelectedMedia(file);
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      image: file,
+    }));
   };
-  
+
 
   const handleSave = () => {
     // Check if the form data is empty
-    if (!formData.title || !formData.description) {
-      setErrorMessage('Please fill in all fields.');
-      return; 
+    if (!formData.title || !formData.description || !formData.image) {
+      setErrorMessage('Please fill in all fields and upload an image.');
+      return;
     }
     setErrorMessage('');
 
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      id: prevFormData.id + 1,
-    }));
-
-    const handleFileUpload = (event) => {
-      const file = event.target.files[0];
-    
-      if (file) {
-        setFormData((prevFormData) => ({
-          ...prevFormData,
-          image: URL.createObjectURL(file), // Set the image directly as a data URL
-        }));
-      }
+    const reader = new FileReader();
+    reader.onload = () => {
+      router.push({
+        pathname: '/success',
+        query: { ...formData, image: reader.result },
+      });
     };
+    reader.readAsDataURL(formData.image);
 
+    
   };
-
-  
 
   const showMediaInGallery = () => {
     // Show the selected image inside the div when the "Choose File" label is clicked
@@ -78,7 +59,6 @@ const Modal = ({ handleClose, show, children }) => {
           height={50}
             src={URL.createObjectURL(selectedMedia)}
             alt="Selected Thumbnail"
-            layout='responsive'
             className={styles.image}
           />
         </div>
@@ -115,14 +95,15 @@ const Modal = ({ handleClose, show, children }) => {
                     
          <label htmlFor="file-upload" className={styles.upload}>
          
+          
           {showMediaInGallery()}
           <input
-                type="file"
-                onChange={handleFileUpload}
-                accept="image/*"
-                style={{ display: 'block' }}
-                id="file-upload"
-              />
+            type="file"
+            onChange={handleFileUpload}
+            accept="image/*"
+            style={{ display: 'block' }}
+            id="file-upload"
+          />
         </label>
         {errorMessage && <div className={styles.errorMessage}>{errorMessage}</div>}
                   </div>
