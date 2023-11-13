@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './testimonial.module.css'
 import { HiHome,HiOutlineDocumentText,HiOutlineTemplate } from 'react-icons/hi'
 import Button from '@/Component/Button/button';
-import Modal from '@/Component/Modal/modal';
+import TestModal from '../../TestimonyModal/testmodal';
 
 
 const Testimonial = () => {
@@ -25,7 +25,7 @@ const Testimonial = () => {
       </div>
       <Button onClick={handleOpenModal} />
       <div>
-        <Modal show={showModal} handleClose={handleCloseModal}/>
+        <TestModal show={showModal} handleClose={handleCloseModal}/>
       </div>
    </div>
   )
