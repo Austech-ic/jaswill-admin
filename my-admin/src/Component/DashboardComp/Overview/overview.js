@@ -79,7 +79,7 @@ const Overview = () => {
       <div className={styles.cont}>
         {
           details.map((datum) => (
-            <div className={styles.subcont}>
+            <div className={styles.subcont} key={datum.id}>
               <p className={styles.bold}>{datum.text}</p>
               <p>{datum.label}</p>
             </div>
@@ -91,7 +91,7 @@ const Overview = () => {
      <div className={styles.conts}>
         {
           update.map((items) => (
-            <div className={styles.subconts}>
+            <div className={styles.subconts} key={items.id}>
               <p>{items.icon}</p>
               <p>{items.label}</p>
             </div>
