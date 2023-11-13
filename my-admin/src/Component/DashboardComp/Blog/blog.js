@@ -1,26 +1,32 @@
-import React from 'react'
-import styles from './blog.module.css'
-import {BiMessageSquareCheck} from 'react-icons/bi'
-import { HiHome,HiOutlineDocumentText,HiOutlineTemplate } from 'react-icons/hi'
-import {AiOutlineHome,AiOutlineInbox,AiFillFileAdd,AiFillSetting,AiOutlineClockCircle} from 'react-icons/ai'
-import { MdCreate, MdOutlineCreateNewFolder,MdIncompleteCircle } from 'react-icons/md'
-import {TbSquareCheckFilled} from 'react-icons/tb'
+import React, { useState } from 'react';
+import styles from './blog.module.css';
+import { HiHome } from 'react-icons/hi';
+import Button from '@/Component/Button/button';
+import Modal from '@/Component/Modal/modal';
 
 const Blog = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
 
   return (
-   <div className={styles.main}>
-    <div className={styles.home}>
+    <div className={styles.main}>
+      <div className={styles.home}>
         <HiHome />
         <p>Dashboard / Blog</p>
       </div>
+      <Button onClick={handleOpenModal} />
       <div>
-        <button></button>
-        <button></button>
-        <button></button>
+        <Modal show={showModal} handleClose={handleCloseModal}/>
       </div>
-   </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;
