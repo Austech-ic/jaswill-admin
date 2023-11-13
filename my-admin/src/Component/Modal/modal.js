@@ -2,10 +2,13 @@ import React,{ useState } from 'react'
 import { MdCreate, MdOutlineCreateNewFolder,MdIncompleteCircle, MdOutlineSaveAlt, MdSaveAlt } from 'react-icons/md'
 import styles from './modal.module.css';
 import { useRouter } from 'next/router';
+import { v4 as uuidv4 } from 'uuid'; 
 import Image from 'next/image';
 
 
 const Modal = ({ handleClose, show, children }) => {
+  const [idCounter, setIdCounter] = useState(1);
+
   const router = useRouter()
   const showHideClassName = show ? styles.displayBlock : styles.displayNone;
 
@@ -37,11 +40,14 @@ const Modal = ({ handleClose, show, children }) => {
     }
     setErrorMessage('');
 
-    const reader = new FileReader();
+     const reader = new FileReader();
     reader.onload = () => {
+      const id = idCounter; // Use the current counter value as the ID
+      setIdCounter((prevCounter) => prevCounter + 1); // Increment the counter for the next ID
+
       router.push({
-        pathname: '/success',
-        query: { ...formData, image: reader.result },
+        pathname: '/dashboard/success',
+        query: { ...formData, image: reader.result, id },
       });
     };
     reader.readAsDataURL(formData.image);
