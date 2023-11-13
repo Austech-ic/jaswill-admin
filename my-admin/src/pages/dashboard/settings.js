@@ -1,4 +1,4 @@
-import Setting from '../../Component/DashboardComp/Setting/setting'
+import Setting from '../../Component/DashboardComp/SettingComp/setting'
 import Layout from '../../Component/Layouts/layout'
 
 
