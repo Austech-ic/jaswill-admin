@@ -1,0 +1,11 @@
+.main{
+    padding: 30px;
+}
+
+.subcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}

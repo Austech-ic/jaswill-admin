@@ -96,6 +96,10 @@
    font-size: 0.7rem;
    line-height: 1rem;
   }
+  .errorMessage{
+    color: red;
+  }
+  
 
   @media (min-width:768px) {
     .label{
@@ -167,7 +171,7 @@
        
       }
       .modal {
-        height: 80vh;
+        height: 100vh;
       }
       .modal{
         width: 70%;
