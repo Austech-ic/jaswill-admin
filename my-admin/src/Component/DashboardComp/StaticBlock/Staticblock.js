@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Staticblock.module.css'
 import Button from '@/Component/Button/button';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import { AiFillDelete } from 'react-icons/ai';
 import { HiHome,HiOutlineDocumentText,HiOutlineTemplate } from 'react-icons/hi'
 
