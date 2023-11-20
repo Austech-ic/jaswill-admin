@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import {FaUpload} from 'react-icons/fa'
+import Button from '@/Component/Button/button';
 import { HiHome,HiOutlineDocumentText,HiOutlineTemplate } from 'react-icons/hi'
 import styles from './media.module.css'
 
@@ -14,9 +15,7 @@ const Media = () => {
             <p>Dashboard / Media</p>
           </div>
           <div>
-            <button></button>
-            <button></button>
-            <button></button>
+          <Button />
           </div>
        </div>
     )
