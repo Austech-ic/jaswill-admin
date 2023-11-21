@@ -1,13 +1,39 @@
+import React, { useState, useEffect } from 'react';
 import Newdoc from '../../Component/DashboardComp/Media/media'
 import Layout from '../../Component/Layouts/layout'
+import Load from '../../Component/Loading/loading';
 
 
 
 export default function Media_Home () { 
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate an API call or data fetching
+    const fetchData = async () => {
+      // Your actual data fetching logic goes here
+      // For demonstration purposes, let's use a timeout
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    };
+
+    fetchData();
+  }, []);
+
+
+
   return(
     <div>
+    {loading ? (
+      <Load />
+    ) : (
+      <React.Fragment>
         <Newdoc />
-    </div>
+      </React.Fragment>
+    )}
+  </div>
+   
   )
 }
 Media_Home.layout = Layout;
